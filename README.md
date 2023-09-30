@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) Technical test BiGo.
+[Nest](https://github.com/nestjs/nest) Technical test BEGO.
 
 ## Installation
 
