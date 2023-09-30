@@ -2,14 +2,14 @@ import { Module } from '@nestjs/common';
 import { IamService } from './iam.service';
 import { IamController } from './iam.controller';
 import { MongooseModule } from '@nestjs/mongoose';
-import { User, UserSchema } from './authorization/entities/user.entity';
-import { AuthorizationController } from './authorization/authorization.controller';
-import { AuthorizationService } from './authorization/authorization.service';
-import { AuthService } from './authorization/auth/auth.service';
+import { User, UserSchema } from './authentication/entities/user.entity';
+import { AuthorizationController } from './authentication/authentication.controller';
+import { AuthorizationService } from './authentication/authentication.service';
+import { AuthService } from './authentication/auth/auth.service';
 import { HashingService } from './hashing/hashing.service';
 import { BcryptService } from './hashing/bcrypt.service';
 import { PassportModule } from '@nestjs/passport';
-import { LocalStrategy } from './authorization/strategy/local.strategy';
+import { LocalStrategy } from './authentication/strategy/local.strategy';
 @Module({
   imports: [
     PassportModule,

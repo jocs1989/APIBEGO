@@ -8,9 +8,9 @@ import { InjectModel } from '@nestjs/mongoose';
 
 import { Model } from 'mongoose';
 
-import { UpdateAuthorizationDto } from 'src/iam/authorization/dto/update-authorization.dto';
-import { SignUpDto } from 'src/iam/authorization/dto/sign-up.dto';
-import { User, UserSchema } from '../iam/authorization/entities/user.entity';
+import { UpdateAuthorizationDto } from 'src/iam/authentication/dto/update-authorization.dto';
+import { SignUpDto } from 'src/iam/authentication/dto/sign-up.dto';
+import { User, UserSchema } from '../iam/authentication/entities/user.entity';
 
 @Injectable()
 export class UsersService {
