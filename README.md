@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://bego.ai/home" target="blank"><img src="https://s3.amazonaws.com/bego.ai/assets/images/logo.png" width="200" alt="Nest Logo" /></a>
+  <a href="https://bego.ai/home" target="blank"><img src="https://s3.amazonaws.com/bego.ai/assets/images/logo.png" width="200" alt="BEGO Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
