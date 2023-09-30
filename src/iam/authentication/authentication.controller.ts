@@ -9,7 +9,7 @@ import {
   Request,
   UseGuards,
 } from '@nestjs/common';
-import { AuthorizationService } from './authorization.service';
+import { AuthorizationService } from './authentication.service';
 import { CreateAuthorizationDto } from './dto/create-authorization.dto';
 import { UpdateAuthorizationDto } from './dto/update-authorization.dto';
 import { AuthGuard } from '@nestjs/passport';
