@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import configMongo from './config/db.config';
 import { IamModule } from './iam/iam.module';
 import { PointsModule } from './points/points.module';
+import { TrucksModule } from './trucks/trucks.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { PointsModule } from './points/points.module';
     }),
     IamModule,
     PointsModule,
+    TrucksModule,
   ],
   controllers: [AppController],
   providers: [AppService],
