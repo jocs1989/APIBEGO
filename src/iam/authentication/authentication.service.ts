@@ -24,7 +24,8 @@ export class AuthorizationService {
     try {
       const hash = await this.hashingService.hash(signUpDto.password);
       const user = new this.authModel({ ...signUpDto, password: hash });
-      return await user.save();
+     const {password,_id,email,roles,isValid,...saveUser}= await user.save();
+      return {_id,email,roles,isValid}
     } catch (err) {
       const mgUserValidUnique = 11000;
 
