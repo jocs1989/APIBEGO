@@ -6,7 +6,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import configMongo from './config/db.config';
 import { IamModule } from './iam/iam.module';
-
+import { PointsModule } from './points/points.module';
 
 @Module({
   imports: [
@@ -19,7 +19,7 @@ import { IamModule } from './iam/iam.module';
       inject: [configMongo.KEY],
     }),
     IamModule,
- 
+    PointsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -24,8 +24,9 @@ export class AuthorizationService {
     try {
       const hash = await this.hashingService.hash(signUpDto.password);
       const user = new this.authModel({ ...signUpDto, password: hash });
-     const {password,_id,email,roles,isValid,...saveUser}= await user.save();
-      return {_id,email,roles,isValid}
+      const { password, _id, email, roles, isValid, ...saveUser } =
+        await user.save();
+      return { _id, email, roles, isValid };
     } catch (err) {
       const mgUserValidUnique = 11000;
 
@@ -48,9 +49,7 @@ export class AuthorizationService {
     return user;
   }
   async signIn(email: string) {
-    const user = await this.authModel
-      .findOne({ email: email })      
-      .exec();
+    const user = await this.authModel.findOne({ email: email }).exec();
     if (!user) {
       throw new NotFoundException('User not Exist');
     }

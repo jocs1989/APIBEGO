@@ -23,6 +23,7 @@ import { SignUpDto } from './dto/sign-up.dto';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { SignInDto } from './dto/sign-in.dto';
 import { Response } from 'express';
+
 @ApiTags('Auth')
 @Controller('api/auth')
 export class AuthorizationController {
@@ -57,10 +58,5 @@ export class AuthorizationController {
       sameSite: true,
     });
     return accessToken;
-  }
-
-  @Get('/')
-  saluda() {
-    return '<h1>Hola</h1>';
   }
 }

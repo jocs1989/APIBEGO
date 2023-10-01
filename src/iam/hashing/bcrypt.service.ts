@@ -6,7 +6,7 @@ import { HashingService } from './hashing.service';
 export class BcryptService implements HashingService {
   async hash(data: string | Buffer): Promise<string> {
     // best practice for auth method
-    const salt = await genSalt();//the fault is 10
+    const salt = await genSalt(); //the fault is 10
     return hash(data, salt);
   }
   async compare(data: string | Buffer, encrypted: string): Promise<boolean> {
