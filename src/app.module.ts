@@ -8,6 +8,7 @@ import configMongo from './config/db.config';
 import { IamModule } from './iam/iam.module';
 import { PointsModule } from './points/points.module';
 import { TrucksModule } from './trucks/trucks.module';
+import { RoutesModule } from './routes/routes.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { TrucksModule } from './trucks/trucks.module';
     IamModule,
     PointsModule,
     TrucksModule,
+    RoutesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

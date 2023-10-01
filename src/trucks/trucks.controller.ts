@@ -14,6 +14,7 @@ import { CreateTruckDto } from './dto/create-truck.dto';
 import { UpdateTruckDto } from './dto/update-truck.dto';
 import { ApiTags, ApiResponse } from '@nestjs/swagger';
 import { Public } from 'src/iam/authorization/decorators/public.decorator';
+
 @ApiTags('Trucks')
 @Controller('trucks')
 export class TrucksController {
