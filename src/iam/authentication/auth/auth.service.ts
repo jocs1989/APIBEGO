@@ -8,6 +8,7 @@ export class AuthService {
   constructor(
     private readonly usersService: AuthorizationService,
     private readonly hashingService: HashingService,
+    private jwtService: JwtService,
   ) {}
 
   async validateUser(username: string, pass: string): Promise<any> {
@@ -23,12 +24,11 @@ export class AuthService {
       return null;
     }
     const { _id, email, isValid, roles, ...otra } = user;
-    return {_id, email, isValid, roles}
+    return { _id, email, isValid, roles };
   }
 
-
   async login(user: any) {
-    const payload = { username: user.username, sub: user.userId };
+    const payload = { username: user.email, sub: user._id, rol: user.roles };
     return {
       access_token: this.jwtService.sign(payload),
     };
