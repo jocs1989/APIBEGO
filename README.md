@@ -22,17 +22,40 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descripcion
 
-[Nest](https://github.com/nestjs/nest) Technical test BEGO.
+[Nest](https://github.com/nestjs/nest) Prueba tecnica BEGO.
+Estas son las tecnologías a utilizar:
 
-## Installation
+- NodeJS (18.15.0)
+- NPM (9.5.0)
+- Express
+- MongoDB
+- Typescript
+- Mongoose / JSON Schemas
+- NestJs
+
+## Requisitos
+
+- Conocer bases y fundamentos de Typescript, NodeJS, Express, MongoDB y   ORM Mongoose.
+- Desarrollar la lógica para la realización de una API, implementando interfaces, modelos, rutas y controladores.
+- Utilizar código limpio, utility types y buenas practicas.
+- Como sugerencia podes usar aggregations de MongoDB.
+## Modelos
+
+- Auth
+- Points
+- Trucks
+- Routes
+- Orders
+## Instalacion
 
 ```bash
+$ docker compose up -d 
 $ npm install
 ```
 
-## Running the app
+## Como ejecutar la aplicación
 
 ```bash
 # development
@@ -45,28 +68,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
 
 - Author - [Jocsan Zamora](https://www.linkedin.com/in/jocsanzamorarobredo/)
 
-
-## License
-
-Nest is [MIT licensed](LICENSE).

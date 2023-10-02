@@ -12,6 +12,11 @@ async function bootstrap() {
       transform: true,
     }),
   );
+  app.enableCors({
+    origin: '*',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  });
   const options = new DocumentBuilder()
     .setTitle('BEGO')
     .setDescription('Description API BEGO')

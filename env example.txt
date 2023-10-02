@@ -1,6 +1,27 @@
-PORT=
+PORT=3000
+# MongoDB
+# host mongo dB
 MONGO_INITDB_HOST=
+#name user 
 MONGO_INITDB_ROOT_USERNAME=
+# password mongo
 MONGO_INITDB_ROOT_PASSWORD=
+#database mongo db
 MONGO_INITDB_DATABASE=
+# port mongo db
 MONGO_INITDB_PORT=
+
+#JWT
+# password securythy hash sha254
+JWT_SECRET=
+# where pretendig using tje token
+JWT_TOKEN_AUDIENCE=
+# what execuete token
+JWT_TOKEN_ISSUER=
+# time life the token this example is 3600 one hour 5 min is 300
+JWT_TOKEN_TTL=
+
+
+#GOOGLE
+
+API_KEY_GOOGLE=
