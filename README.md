@@ -43,10 +43,10 @@ Estas son las tecnologías a utilizar:
 - Como sugerencia podes usar aggregations de MongoDB.
 ## Modelos
 
-- Auth
-- Points
-- Trucks
-- Routes
+- [Auth](https://github.com/jocs1989/APIBEGO/tree/main/src/iam)
+- [Points](https://github.com/jocs1989/APIBEGO/tree/main/src/points)
+- [Trucks](https://github.com/jocs1989/APIBEGO/tree/main/src/trucks) 
+- [Routes](https://github.com/jocs1989/APIBEGO/tree/main/src/routes) 
 - Orders
 ## Instalacion
 
